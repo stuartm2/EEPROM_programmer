@@ -75,11 +75,9 @@ int hexstrToInt(String hexstr) {
     char c = hexstr.charAt(i);
     int val = 0;
 
-    if (48 <= c <= 57) {
-//    if (c >= 48 && c <= 57) {
+    if (c >= 48 && c <= 57) {
         val = c - 48;
-    } else if (65 <= c <= 70) {
-//    } else if (c >= 65 && c <= 70) {
+    } else if (c >= 65 && c <= 70) {
         val = c - 55;
     }
 
